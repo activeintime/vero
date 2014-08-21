@@ -62,7 +62,7 @@ module Vero
       self.secret           = nil
 
       if defined?(Rails)
-        self.development_mode = !Rails.env.production?
+        self.development_mode = false #!Rails.env.production? # Now we have different API keys for production and staging/development
       end
     end
 
