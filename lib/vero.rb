@@ -10,6 +10,7 @@ module Vero
   autoload :DSL,                  'vero/dsl'
   autoload :Sender,               'vero/sender'
   autoload :ResqueWorker,         'vero/senders/resque'
+  autoload :SidekiqWorker,        'vero/senders/sidekiq'
 
   module Api
     module Workers
@@ -36,6 +37,7 @@ module Vero
     autoload :Base,               'vero/senders/base'
     autoload :DelayedJob,         'vero/senders/delayed_job'
     autoload :Resque,             'vero/senders/resque'
+    autoload :Sidekiq,            'vero/senders/sidekiq'
     autoload :Invalid,            'vero/senders/invalid'
     autoload :Thread,             'vero/senders/thread'
   end
