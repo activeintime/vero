@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
     [:development, 'sidekiq'],
     [:runtime,     'json'],
     [:runtime,     'rest-client'],
-    [:runtime,     'sucker_punch', '~> 1.0']
+    [:runtime,     'sucker_punch', '~> 1.5']
   ]
 
   s.files         = Dir['**/*']
